@@ -146,7 +146,7 @@ let visCallback = function(newNode:NodeID)
 */
 prov.addObserver(["selectedQuartet"], () => {
   scatterplot.changeQuartet(prov.current().getState().selectedQuartet);
-
+  console.log(prov.graph());
   provVisUpdate()
 
 });
@@ -156,7 +156,7 @@ prov.addObserver(["selectedQuartet"], () => {
 */
 prov.addObserver(["selectedNode"], () => {
   scatterplot.selectNode(prov.current().getState().selectedNode);
-
+  console.log(prov.graph());
   provVisUpdate()
 
 });
