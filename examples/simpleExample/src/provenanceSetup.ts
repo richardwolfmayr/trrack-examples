@@ -67,6 +67,7 @@ let changeQuartetUpdate = function(newQuartet: string){
   )
 
   action
+
     .addEventType("Change Quartet")
     .alwaysStoreState(true)
     .applyAction();
@@ -133,7 +134,7 @@ let visCallback = function(newNode:NodeID)
 */
 prov.addObserver(["selectedQuartet"], () => {
   scatterplot.changeQuartet(prov.current().getState().selectedQuartet);
-  debugger
+
   provVisUpdate()
 });
 
