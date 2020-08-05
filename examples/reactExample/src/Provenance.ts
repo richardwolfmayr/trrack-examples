@@ -1,7 +1,7 @@
 import {
   Provenance,
   isStateNode
-} from '@visdesignlab/trrack';
+} from '@visdesignlab/provenance-lib-core';
 import {
   ApplicationState,
   NodeMap
